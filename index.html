@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
 </head>
-<body>
 
+<body>
+    <form action="/echo" method="post">
+        <h1>Unified Modeling Language Theory Test</h1>
+        <table style="width:70%" border="0">
+            <thead>
+                <tr>
+                    <td>Test Subject:</td>
+                    <td>Unified Modeling Language</td>
+                    <td>Time:</td>
+                    <td>100 minute</td>
+                    <td>Score:</td>
+                    <td>100</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Class:</td>
+                    <td><input type="text" name="class" id="class"></td>
+                    <td>Student ID:</td>
+                    <td><input type="text" name="student_id" id="student_id"></td>
+                    <td>Name:</td>
+                    <td><input type="text" name="student_name" id="student_name"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>1、Fill in the blanks(5 points per space, 20 points total)</h1>
+        <ol>
+            <li>The full name of UML in Chinese is: <input type="text" name="question1_1"></li>
+            <li>The most prominent feature of the object is:
+                <input type="text" name="question1_2_1"> <input type="text" name="question1_2_2"> <input type="text"
+                    name="question1_2_3">
+            </li>
+        </ol>
+        <!--
+        <p>The full name of UML in Chinese is: <input type="text" name="question1_1"></p>
+        <p>The most prominent feature of the object is: <input type="text" name="question1_2_1"> <input type="text" name="question1_2_2"> <input type="text" name="question1_2_3"></p>
+-->
+        <h1>2、Multiple choice question(10 points per space, 20 points total)</h1>
+        <ol>
+            <li>The relationship between UML and software engineering is:
+                <br><br>
+                <input type="radio" name="question2_1" id="question2_1_A">
+                <label for="question2_1_A">(A) UML is software engineering</label><br>
+                <input type="radio" name="question2_1" id="question2_1_B">
+                <label for="question2_1_B">(B) UML participates in several stages of the software development process in
+                    software engineering</label><br>
+                <input type="radio" name="question2_1" id="question2_1_C">
+                <label for="question2_1_C">(C) UML has nothing to do with software engineering</label><br>
+                <input type="radio" name="question2_1" id="question2_1_D">
+                <label for="question2_1_D">(D) UML is part of software engineering</label><br>
+            </li>
+            <br>
+            <li>Java language support:
+                <br><br>
+                <input type="radio" name="question2_2" id="question2_2_A">
+                <label for="question2_2_A">(A) Single inheritance</label><br>
+                <input type="radio" name="question2_2" id="question2_2_B">
+                <label for="question2_2_B">(B) Multiple inheritance</label><br>
+                <input type="radio" name="question2_2" id="question2_2_C">
+                <label for="question2_2_C">(C) Single inheritance and multiple inheritance support</label><br>
+                <input type="radio" name="question2_2" id="question2_2_D">
+                <label for="question2_2_D">(D) Single inheritance and multiple inheritance are not supported</label><br>
+            </li>
+            <br>
+        </ol>
+
+        <h1>3、Multiple choice(10 points per space, 20 points total)</h1>
+        <ol>
+            <li>The granularity of the use case is divided into the following three:
+                <br><br>
+                <input type="checkbox" name="question3_1" id="question3_1_A">
+                <label for="question3_1_A">(A) Overview level</label><br>
+                <input type="checkbox" name="question3_1" id="question3_1_B">
+                <label for="question3_1_B">(B) Demand level</label><br>
+                <input type="checkbox" name="question3_1" id="question3_1_C">
+                <label for="question3_1_C">(C) User target level</label><br>
+                <input type="checkbox" name="question3_1" id="question3_1_D">
+                <label for="question3_1_D">(D) Sub-function level</label><br>
+            </li>
+            <br>
+            <li>The class diagram consists of which of the following three parts:
+                <br><br>
+                <input type="checkbox" name="question3_2" id="question3_2_A">
+                <label for="question3_2_A">(A) Name</label><br>
+                <input type="checkbox" name="question3_2" id="question3_2_B">
+                <label for="question3_2_B">(B) Attribute</label><br>
+                <input type="checkbox" name="question3_2" id="question3_2_C">
+                <label for="question3_2_C">(C) Operation</label><br>
+                <input type="checkbox" name="question3_2" id="question3_2_D">
+                <label for="question3_2_D">(D) Function</label><br>
+            </li>
+            <br>
+        </ol>
+
+        <h1>4、True or False(10 points per space, 20 points total)</h1>
+        <ol>
+            <li>
+                Use case diagrams are only used to communicate and communicate with customers to determine demand。
+                <input type="radio" name="question4_1" id="question4_1_T">
+                <label for="question4_1_T">√</label>
+                <input type="radio" name="question4_1" id="question4_1_F">
+                <label for="question4_1_F">×</label>
+            </li>
+            <li>
+                In the state diagram, the termination state allows any number of multiples in a state diagram。
+                <input type="radio" name="question4_2" id="question4-2_T">
+                <label for="question4_2_T">√</label>
+                <input type="radio" name="question4_2" id="question4_2_F">
+                <label for="question4_2_F">×</label>
+            </li>
+        </ol>
+
+        <h1>5、Short answer question(20 points per space, 20 points total)</h1>
+        <ol>
+            <li>Briefly describe what the model is and how it behaves?<br><br>
+                <textarea name="question5" id="question5" cols="70" rows="10"></textarea>
+            </li>
+        </ol>
+
+        <input type="submit" value="Calculating score">
+    </form>
 </body>
+
 </html>
